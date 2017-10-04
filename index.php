@@ -1,4 +1,7 @@
-﻿﻿<?php require("php/index_functions.php"); ?>
+﻿﻿<?php
+	require("php/global.php");
+	require("php/index_functions.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +55,7 @@
 	
 		<!-- Site header  -->
 		<header class="site-header">
-		  <div class="site-logo"><a href="index.html"><img src="images/logo.png" alt="Mouldifi" title="Mouldifi"></a></div>
+		  <div class="site-logo"><a href="index.php"><img src="images/logo.png" alt="Mouldifi" title="Mouldifi"></a></div>
 		  <div class="sidebar-collapse hidden-xs"><a class="sidebar-collapse-icon" href="#"><i class="icon-menu"></i></a></div>
 		  <div class="sidebar-mobile-menu visible-xs"><a data-target="#side-nav" data-toggle="collapse" class="mobile-menu-icon" href="#"><i class="icon-menu"></i></a></div>
 		</header>
@@ -60,126 +63,11 @@
 		
 		<!-- Main navigation -->
 		<ul id="side-nav" class="main-menu navbar-collapse collapse">
-			<li class="has-sub active "><a href="index.html"><i class="icon-gauge"></i><span class="title">Dashboard</span></a>
+			<li class="has-sub active"><a href="index.php"><i class="icon-gauge"></i><span class="title">Dashboard</span></a>
 				<ul class="nav">
-					<li class="active"><a href="index.html"><span class="title">Home</span></a></li>
-					<li><a href="assets.html"><span class="title">Assets</span></a></li>
+					<li class="active"><a href="index.php"><span class="title">Home</span></a></li>
+					<li><a href="assets.php"><span class="title">Assets</span></a></li>
 				</ul>
-			</li>
-			<li class="has-sub"><a href="collapsed-sidebar.html"><i class="icon-layout"></i><span class="title">Layouts</span></a>
-				<ul class="nav collapse">
-					<li><a href="collapsed-sidebar.html"><span class="title">Collapsed Sidebar</span></a></li>
-					<li><a href="fixed-sidebar.html"><span class="title">Fixed Sidebar</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"><a href="panels.html"><i class="icon-newspaper"></i><span class="title">UI Elements</span></a>
-				<ul class="nav collapse">
-					<li><a href="panels.html"><span class="title">Panels</span></a></li>
-					<li><a href="buttons.html"><span class="title">Buttons</span></a></li>
-					<li><a href="typography.html"><span class="title">Typography</span></a></li>
-					<li><a href="tabs-accordions.html"><span class="title">Tabs &amp; Accordions</span></a></li>
-					<li><a href="tooltips-popovers.html"><span class="title">Tooltips &amp; Popovers</span></a></li>
-					<li><a href="navbars.html"><span class="title">Navbars</span></a></li>
-					<li><a href="breadcrumbs.html"><span class="title">Breadcrumbs</span></a></li>
-					<li><a href="badges-label.html"><span class="title">Badges &amp; Labels</span></a></li>
-					<li><a href="progress-bars.html"><span class="title">Progress Bars</span></a></li>
-					<li><a href="modals.html"><span class="title">Modals</span></a></li>
-					<li><a href="alerts.html"><span class="title">Alerts</span></a></li>
-					<li><a href="pagination.html"><span class="title">Pagination</span></a></li>
-					<li><a href="video.html"><span class="title">Video</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"><a href="basic-tables.html"><i class="icon-window"></i><span class="title">Tables</span></a>
-				<ul class="nav collapse">
-					<li><a href="basic-tables.html"><span class="title">Basic Tables</span></a></li>
-					<li><a href="data-tables.html"><span class="title">Data Tables</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"><a href="form-basic.html"><i class="icon-doc-text"></i><span class="title">Forms</span></a>
-				<ul class="nav collapse">
-					<li><a href="form-basic.html"><span class="title">Basic Form</span></a></li>
-					<li><a href="form-advanced.html"><span class="title">Advanced Plugins</span></a></li>
-					<li><a href="form-wizard.html"><span class="title">Form Wizard</span></a></li>
-					<li><a href="file-upload.html"><span class="title">File upload</span></a></li>
-					<li><a href="editors.html"><span class="title">Editors</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"><a href="graph-flot.html"><i class="icon-chart-bar"></i><span class="title">Graphs</span></a>
-				<ul class="nav collapse">
-					<li><a href="graph-flot.html"><span class="title">Flot Charts</span></a></li>
-					<li><a href="graph-morris.html"><span class="title">Morris Charts</span></a></li>
-					<li><a href="graph-peity.html"><span class="title">Peity Charts</span></a></li>
-					<li><a href="graph-sparkline.html"><span class="title">Sparkline Charts</span></a></li>
-					<li><a href="graph-chartjs.html"><span class="title">ChartsJs</span></a></li>
-					<li><a href="graph-chartist.html"><span class="title">Chartist</span></a></li>
-					<li><a href="graph-c3.html"><span class="title">C3 Charts</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"><a href="mail-inbox.html"><i class="icon-mail"></i><span class="title">Mailbox</span></a>
-				<ul class="nav collapse">
-					<li><a href="mail-inbox.html"><span class="title">Inbox</span></a></li>
-					<li><a href="mail-compose.html"><span class="title">Compose Mail</span></a></li>
-					<li><a href="mail-read.html"><span class="title">View Mail</span></a></li>
-				</ul>
-			</li>
-			<li><a href="maps-vector.html"><i class="icon-location"></i><span class="title">Vector Map</span> <span class="label label-secondary pull-right">NEW</span></a></li>
-			<li class="has-sub"><a href="login.html"><i class="icon-google-circles"></i><span class="title">Various Screens</span></a>
-				<ul class="nav collapse">
-					<li><a href="login.html"><span class="title">Login</span></a></li>
-					<li><a href="register.html"><span class="title">Register</span></a></li>
-					<li><a href="forgot-password.html"><span class="title">Forgot password</span></a></li>
-					<li><a href="lockscreen.html"><span class="title">Lockscreen</span></a></li>
-					<li><a href="error-404.html"><span class="title">404 Page</span></a></li>
-					<li><a href="blank-page.html"><span class="title">Blank Page</span></a></li>
-					<li><a href="comments.html"><span class="title">Comments</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"><a href="icons-entypo.html"><i class="icon-thumbs-up"></i><span class="title">Icons</span></a>
-				<ul class="nav collapse">
-					<li><a href="icons-entypo.html"><span class="title">Entypo</span></a></li>
-					<li><a href="icons-fontawesome.html"><span class="title">Font Awesome</span></a></li>
-					<li><a href="icons-glyphicons.html"><span class="title">Glyph Icons</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"><a href="simple-view.html"><i class="icon-list"></i><span class="title">List Views</span></a>
-				<ul class="nav collapse">
-					<li><a href="simple-view.html"><span class="title">Simple View</span></a></li>
-					<li><a href="cards-view.html"><span class="title">Cards View</span></a></li>
-					<li><a href="table-view.html"><span class="title">Table View</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"><a href="short-view.html"><i class="icon-popup"></i><span class="title">Grid Views</span></a>
-				<ul class="nav collapse">
-					<li><a href="short-view.html"><span class="title">Short View</span></a></li>
-					<li><a href="detailed-view.html"><span class="title">Detailed View</span></a></li>
-					<li><a href="detailed-view-2.html"><span class="title">Detailed Action View</span></a></li>
-				</ul>
-			</li>
-			<li class="has-sub"> 
-				<a href="#/"><i class="icon-flow-tree"></i><span class="title">Menu Levels</span></a> 
-				<ul class="nav collapse"> 
-					<li><a href="#/"><span class="title">Menu Level 1.1</span></a></li> 
-					<li><a href="#/"><span class="title">Menu Level 1.2</span></a></li> 
-					<li class="has-sub">
-						<a href="#/"><span class="title">Menu Level 1.3</span></a> 
-						<ul class="nav collapse"> 
-							<li><a href="#/"><span class="title">Menu Level 2.1</span></a></li> 
-							<li class="has-sub">
-								<a href="#/"><span class="title">Menu Level 2.2</span></a>
-								<ul class="nav collapse"> 
-									<li class="has-sub"> 
-										<a href="#/"><span class="title">Menu Level 3.1</span></a> 
-										<ul class="nav collapse"> 
-											<li><a href="#/"><span class="title">Menu Level 4.1</span></a></li> 
-										</ul> 
-									</li> 
-									<li><a href="#/"><span class="title">Menu Level 3.2</span></a></li> 
-								</ul>
-							</li> 
-							<li><a href="#/"><span class="title">Menu Level 2.3</span></a></li> 
-						</ul> 
-					</li> 
-				</ul> 
 			</li>
 		</ul>
 		<!-- /main navigation -->		
@@ -243,69 +131,15 @@
 				  <!-- /notifications -->
 				  
 				  <!-- Messages -->
-				  <li class="notifications dropdown">
-					<a data-close-others="true" data-hover="dropdown" data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon-mail"></i><span class="badge badge-secondary">12</span></a>
-					<ul class="dropdown-menu pull-right">
-						<li class="first">
-							<div class="dropdown-content-header"><i class="fa fa-pencil-square-o pull-right"></i> Messages</div>
-						</li>
-						<li>
-							<ul class="media-list">
-								<li class="media">
-									<div class="media-left"><img alt="" class="img-circle img-sm" src="images/domnic-brown.png"></div>
-									<div class="media-body">
-										<a class="media-heading" href="#">
-											<span class="text-semibold">Domnic Brown</span>
-											<span class="media-annotation pull-right">Tue</span>
-										</a>
-										<span class="text-muted">Your product sounds interesting I would love to check this ne...</span>
-									</div>
-								</li>
-								<li class="media">
-									<div class="media-left"><img alt="" class="img-circle img-sm" src="images/john-smith.png"></div>
-									<div class="media-body">
-										<a class="media-heading" href="#">
-											<span class="text-semibold">John Smith</span>
-											<span class="media-annotation pull-right">12:30</span>
-										</a>
-										<span class="text-muted">Thank you for posting such a wonderful content. The writing was outstanding...</span>
-									</div>
-								</li>
-								<li class="media">
-									<div class="media-left"><img alt="" class="img-circle img-sm" src="images/stella-johnson.png"></div>
-									<div class="media-body">
-										<a class="media-heading" href="#">
-											<span class="text-semibold">Stella Johnson</span>
-											<span class="media-annotation pull-right">2 days ago</span>
-										</a>
-										<span class="text-muted">Thank you for trusting us to be your source for top quality sporting goods...</span>
-									</div>
-								</li>
-								<li class="media">
-									<div class="media-left"><img alt="" class="img-circle img-sm" src="images/alex-dolgove.png"></div>
-									<div class="media-body">
-										<a class="media-heading" href="#">
-											<span class="text-semibold">Alex Dolgove</span>
-											<span class="media-annotation pull-right">10:45</span>
-										</a>
-										<span class="text-muted">After our Friday meeting I was thinking about our business relationship and how fortunate...</span>
-									</div>
-								</li>
-								<li class="media">
-									<div class="media-left"><img alt="" class="img-circle img-sm" src="images/domnic-brown.png"></div>
-									<div class="media-body">
-										<a class="media-heading" href="#">
-											<span class="text-semibold">Domnic Brown</span>
-											<span class="media-annotation pull-right">4:00</span>
-										</a>
-										<span class="text-muted">I would like to take this opportunity to thank you for your cooperation in recently completing...</span>
-									</div>
-								</li>
-							</ul>
-						</li>
-						<li class="external-last"> <a class="danger" href="#">All Messages</a> </li>
-					</ul>
-				  </li>
+				  <?php
+					  $msgs = new message_list();
+					  $msgs->add_message("Name1","images/domnic-brown.png","This is a test message.","Tues");
+					  $msgs->add_message("Name2","images/domnic-brown.png","This is a test message.","Tues");
+					  $msgs->add_message("Name3","images/domnic-brown.png","This is a test message.","Tues");
+					  $msgs->add_message("Name4","images/domnic-brown.png","This is a test message.","Tues");
+					  $msgs->add_message("Name5","images/domnic-brown.png","This is a test message.","Tues");
+					  $msgs->export();
+				  ?>
 				  <!-- /messages -->
 				  
 				</ul>
@@ -325,7 +159,7 @@
 						<div class="col-md-6">
 							<div class="panel minimal panel-default">
 								<div class="panel-heading clearfix"> 
-									<div class="panel-title">Signups</div> 
+									<div class="panel-title">Asset Information</div> 
 									<ul class="panel-tool-options"> 
 										<li class="dropdown">
 											<a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false"><i class="icon-cog"></i></a>
@@ -343,11 +177,33 @@
 								<div class="panel-body">
 									<div class="row col-with-divider">
 										<div class="col-xs-6 text-center stack-order"> 
-											<h1 class="no-margins">#</h1>
+											<h1 class="no-margins"><?php
+$mysqli = new mysqli("localhost", "root", "", "tfvisuals");
+
+/* check connection */
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
+}
+
+if ($result = $mysqli->query("SELECT id FROM assets ORDER BY id")) {
+
+    /* determine number of rows result set */
+    $row_cnt = $result->num_rows;
+
+    printf(" %d\n", $row_cnt);
+
+    /* close result set */
+    $result->close();
+}
+
+/* close connection */
+$mysqli->close();
+?></h1>
 											<small># of assets</small>
 										</div>
 										<div class="col-xs-6 text-center stack-order"> 
-											<h1 class="no-margins">#</h1>
+											<h1 class="no-margins">$$$</h1>
 											<small>Value of Assets</small>
 										</div>
 									</div>
@@ -649,29 +505,20 @@
 			}
 		];
 		// Bars
-		
 
-		// pie graph
-		var doughnutData = [
-			{
-				value: 1000,
-				color: "#22b66f",
-				highlight: "#12a65f",
-				label: "Only Visited"
-			},
-			{
-				value: 2496,
-				color: "#f3c111",
-				highlight: "#e7b505",
-				label: "Purchased"
-			},
-			{
-				value: 1762,
-				color: "#ef193c",
-				highlight: "#e81235",
-				label: "Bounced"
-			}
-		];
+		<?php
+			
+			//Pie graph data generation.
+			$pie = new pie_graph_data("doughnutData");
+			
+						 //Data, Color,		Highlight, Label
+			$pie->add_item(5742, "#22b66f", "#12a65f", "Only Visited");
+			$pie->add_item(2496, "#f3c111", "#e7b505", "Purchased");
+			$pie->add_item(1762, "#ef193c", "#e81235", "Bounced");
+			
+			$pie->export();
+			
+		?>
 
 		var doughnutOptions = {
 			segmentShowStroke: true,
